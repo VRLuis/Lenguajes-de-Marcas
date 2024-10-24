@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">+
+    <link rel="stylesheet" href="estilos.css"/>
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <img src="IAT-LOGOTIPO.jpg"/>
+
+    <form method="post" action="procesarincidencia.php">
+        <fieldset>
+            <legend>Nueva incidencia</legend>
+
+            <label for="profe">Profesor *:</label>
+            <input required placeholder="Escribe tu nombre aquí." id="profe" name="profe" type="text" maxlength="40"/>
+
+            <br>
+            <br>
+
+            <label for="mail">Correo electrónico *:</label>
+            <input required placeholder="Escribe tu correo aquí." id="mail" name="mail" type="mail"/>
+
+            <br>
+            <br>
+
+            <label for="depart">Departamento *:</label>
+            <select id="depart" name="depart" required>
+                <option selected>Informática</option>
+                <option>Lengua</option>
+                <option>Geografía</option>
+            </select>
+
+            <br>
+            <br>
+        
+            <label for="aula">Aula *:</label>
+            <input required placeholder="Indica aquí el aula de la i" id="aula" name="aula" type="text"/>
+
+            <br>
+            <br>
+        
+            <label for="dia">Día de la incidencia *:</label>
+            <input required type="date" id="dia" name="dia">
+
+            <br>
+            <br>
+
+            <label for="hora">Hora de la incidencia *:</label>
+            <input required type="time" id="hora" name="hora">
+
+            <br>
+            <br>
+
+            <label for="desc">Descripción de la incidencia *:</label>
+            <textarea required name="desc" id="desc"></textarea>
+
+            <br>
+            <br>
+
+            <label for="arch">Imagen de la incidencia (opcional):</label>
+            <input type="file" id="arch" name="arch" value="Seleccionar archivo"/>
+
+            <br>
+            <br>
+
+            <input type="submit" id="submit" name="submit" value="Envia incidencia"/>
+
+            <input type="reset" value="Borrar formulario" id="borrar" name="borrar">
+
+        </fieldset>
+    </form>
+
+    <br>
+
+    <footer>
+        <h3>Síguenos</h3>
+        <img class="social" src="icons8-facebook-48.png"/>
+        <img class="social" src="icons8-twitter-48.png"/>
+        <img class="social" src="icons8-instagram-48.png"/>
+        <img class="social" src="icons8-youtube-48.png"/>
+        <img class="social" src="icons8-website-48.png"/>
+    </footer>
+</body>
+</html>
